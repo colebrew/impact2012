@@ -1,0 +1,535 @@
+EECS 376 
+
+Foundations of Computer Science 
+
+Fall 2012 
+
+ 
+
+General Information 
+
+ 
+
+ 
+ 
+ 
+This document contains answers to most questions about the course organization and 
+requirements, so please read it carefully and retain a copy. 
+ 
+Times: 
+ 
+Lecture 001, 12:00-1:30 p.m. MW, 1013 Dow 
+Discussion 011, 2:30-3:30 p.m. Tu, 2315 GG Brown 
+Discussion 012, 8:30-9:30 a.m. Tu,  1006 Dow 
+Discussion 013, 4:00-5:00 p.m.  Tu, 1200 EECS 
+Discussion 014, 5:00-6:00 p.m.  Tu, 1005 Dow 
+ 
+Instructional Staff 
+ 
+Professor:  
+K.Compton 
+Office: 3603 CSE  
+Office Hours:   TBA 
+Email:  kjc@umich.edu   
+Please put "EECS 376" in subject line of e-mail messages. 
+
+  
+
+ 
+GSIs:  
+
+ 
+
+Aaron Snook 
+Office: TBA 
+Office Hours: TBA 
+Email:  asnook@umich.edu 
+ 
+Bryce Wiedenbeck 
+Office: TBA 
+Office Hours: TBA 
+Email: btwied@umich.edu 
+ 
+ 
+
+ 
+
+1 
+
+Course Description 
+An introduction to computation theory: finite automata, regular languages, Turing machines, 
+recursive languages and functions, and computational complexity 
+ 
+Required Textbook 
+Introduction to the Theory of Computation, 2nd ed., M. Sipser, Thomson. 
+ 
+Web Site 
+Go to https://ctools.umich.edu/ 
+ 
+You must be registered to access this web site. This web site will be used to make 
+announcements, distribute homework assignment and solutions, sample exams, etc., so check it 
+regularly. 
+ 
+Course Policies 
+
+ 
+Class Sections 
+You must be registered for the lecture section and the discussion section for this course. The 
+instructors (professor and GSI) for your lecture and discussion sections are responsible for 
+grading and advising you.  
+ 
+Homework Policies 
+The lectures and discussion sections will be much more useful to students who have thought 
+about the material in advance.  The course schedule below indicates the sections of the textbook 
+that will be discussed in class. Be sure that you have read the indicated text sections before each 
+class meeting. Homework is not only a way of showing us that you are keeping up with the class 
+on a regular basis —it is an important part of the learning process.  
+ 
+Homework will be assigned on Wednesdays and will be posted on the web. Completed 
+homework is due on the following Wednesday at the beginning of class.  Late homework will 
+not be accepted for any reason, because solutions will be posted on the Web the following 
+day. 
+ 
+There will be a total of nine homework assignments. Only the eight highest grades received will 
+be used to compute your final course grade. In other words, the lowest grade received by each 
+student (including a zero for at most one missed assignment) will be discarded. By throwing out 
+the lowest score, we allow you to miss a homework assignment for reasons of illness, a death in 
+the family, or any other reason.  You should not squander this resource; if you miss an 
+assignment early in the term because you do not feel like turning in the assignment, you may 
+regret it later. 
+ 
+Doing the Homework 
+Please write your answers clearly and neatly to avoid problems when the grader is correcting 
+your homework. Also answer the questions in the order they are assigned; that will help to 
+prevent problems, such as questions left ungraded. Show all your work, and state any special 
+assumptions you make. 
+ 
+
+ 
+
+2 
+
+You may consult with other students in the class when doing homework. However, the version 
+you turn in must be in your own words, written (or typed) in your own hand. 
+ 
+To ease handling of homework, staple all your homework sheets. On the front page, top right 
+corner provide the following items: 
+
+ 
+
+ 
+ 
+ 
+
+Name: John P. Doe 
+Homework 4. 
+ 
+
+• Print your name  
+• Print the homework number. 
+• The result should then look like this: 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Submitting Homework 
+Homework will be collected in class by the GSI. 
+ 
+Regrading Homework 
+If there is a mistake in the grading of your homework, you have one week to request a regrade 
+after the homework is returned to you.  When requesting a regrade, attach a cover page to your 
+homework explaining clearly which questions need to be regraded and why.  Note that  “I think I 
+deserve more points for this question” is not a valid reason for a regrade.  Homework regrades 
+should be submitted to the GSI.  
+ 
+Project Policies 
+There will be one project that involves using the development tool Lex.  This will be treated as a 
+programming project and must be done on your own.  You are not allowed to work with other 
+students in the course.  If you are having difficulties with the project, you may consult the 
+professor or GSI, but no one else. 
+ 
+ The Engineering Honor Code applies to the project. Suspected cases of cheating or other 
+Honor Code violations will be reported to the Engineering Honor Council and will be dealt with 
+severely. If you are unclear about these rules, contact the professor or GSI for clarification. Keep 
+this in mind: If you are having trouble finishing an assignment, it is  far better to do your own 
+work and receive a low score than to go through  an academic judiciary case and suffer the 
+penalties, which may be severe. 
+ 
+What is cheating on a project?  
+
+  having someone else write your program, in whole or in part. 
+  copying a program someone else wrote, in whole or in part. 
+  collaborating with someone else to the extent that the programs are identifiably similar, in 
+
+whole or in part 
+
+  utilizing program solutions from a previous semester (whether written by a student or the 
+
+course instructor) 
+
+ What is not cheating?  
+
+talking to someone in general about topics and concepts involved. 
+
+ 
+  asking someone for help with a specific bug or error message in your program. 
+  getting help with the specifics of Lex syntax. 
+
+ 
+
+3 
+
+  utilizing information given to you by the teaching staff of the course, for example 
+
+copying a paragraph describing the program from the assignment write-up we provide to 
+you, copying parts of code from handouts used this course 
+
+ 
+ 
+ 
+Exam Policies 
+
+ 
+
+ 
+
+ 
+
+The Engineering Honor Code applies to the exam. 
+There will be three in-class exams.  All exams will be closed book.  On each exam, you will be 
+allowed to bring one 4” by 6” file card (or paper cut to these dimensions) with anything you like 
+written on it (you can use both sides), but no other material.   Do not  bring a blue book. If you 
+cannot take an exam at the scheduled time, notify your instructor at least one week in advance so 
+that alternative arrangements can be made. 
+ 
+The exams will be on the following days.  
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+Exam 1: Wed., Oct. 3 
+Exam 2: Wed., Nov. 7 
+Exam 3: Fri., Dec. 14, 1:30- 3:30 p.m. 
+
+ 
+
+If there is a mistake in the grading of your midterm, you have one week to request a regrade after 
+the exam is returned in class (not necessarily a week after you pick up your exam). 
+
+ 
+
+ 
+
+ 
+
+Course Grade Distribution 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+Exam 1: 
+Exam 2: 
+Exam 3: 
+Project: 
+Homeworks: 
+Total:      
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+  20%   
+  20% 
+  25% 
+  10% 
+  25% 
+100%   
+
+Course Schedule 
+
+ 
+Topic 
+
+Page Numbers 
+
+Intro, finite automata, HW 1 assigned 
+Formal definitions of finite automata 
+HW 1 discussion 
+Regular operations, nondeterminsm, HW 1 due, HW 2 
+assigned 
+Equivalence of NFAs and DFAs 
+HW 2 discussion 
+Closure under regular ops, HW 2 due, HW 3 assigned 
+
+31-37 
+37-43 
+
+ 
+
+44-52 
+
+53-58 
+
+ 
+
+58-64 
+
+4 
+
+Lect Disc  Date 
+
+1 
+2 
+ 
+
+3 
+
+4 
+ 
+5 
+
+  Sep. 5 
+  Sep. 10 
+1  Sep. 11 
+ 
+
+Sep. 12 
+
+  Sep. 17 
+2  Sep. 18 
+  Sep. 19 
+
+ 
+
+ 
+
+6 
+ 
+7 
+8 
+ 
+9 
+10 
+
+ 
+
+11 
+12 
+13 
+
+ 
+
+14 
+15 
+
+ 
+
+16 
+
+17 
+
+ 
+
+18 
+
+19 
+
+ 
+
+20 
+21 
+
+ 
+
+22 
+23 
+
+ 
+
+24 
+25 
+
+ 
+
+26 
+27 
+
+ 
+ 
+
+  Sep. 24 
+3  Sep. 25 
+  Sep. 26 
+  Oct. 1 
+4  Oct. 2 
+  Oct. 3 
+  Oct. 8 
+5  Oct. 9 
+  Oct. 10 
+  Oct. 17 
+  Oct. 22 
+7  Oct. 23 
+  Oct. 24 
+  Oct. 29 
+8  Oct. 30 
+ 
+
+Oct. 31 
+
+  Nov. 5 
+9  Nov. 6 
+  Nov. 7 
+ 
+
+Nov. 12 
+
+10  Nov. 13 
+  Nov. 14 
+  Nov. 19 
+11  Nov. 20 
+  Nov. 21 
+  Nov. 26 
+12  Nov. 27 
+  Nov. 28 
+  Dec. 3 
+13  Dec. 4 
+  Dec. 5 
+  Dec. 10 
+14  Dec. 11 
+  Dec. 14 
+
+Equivalence of regular expressions, finite automata 
+HW 3 discussion 
+The Pumping Lemma, HW 3 due, Sample Exam 1 distr. 
+Lex and lexical analyzers, Project assigned 
+Sample Exam 1 discussed and review 
+Exam 1(in class) 
+Context-free grammars 
+Exam 1 returned 
+Pushdown automata, Project due, HW 4 assigned 
+Turing machines, HW 4 due, HW 5 assigned 
+Variants of Turing machines, Turing’s thesis 
+HW 5 discussion 
+Decidable problems, HW 5 due, HW 6 assigned 
+Diagonalization, the Halting Problem 
+HW 6 discussion 
+Turing unrecognizable languages, HW 6 due, Sample 
+Exam 2 distributed 
+Computation histories 
+Sample Exam 2 discussion and review 
+Exam 2 (in class) 
+
+ 
+
+Reductions and complexity 
+
+Exam 2 returned 
+The class P, HW 7 assigned 
+NP and NP-completeness 
+HW 7 discussion 
+Cook’s Theorem, HW 7 due, HW 8 assigned 
+NP-complete problems 
+HW 8 discussion 
+NP-complete problems, HW 8 due, HW 9 assigned 
+Space complexity, Savitch’s Theorem 
+HW 9 due, Sample Exam 3 distributed 
+The classes L and NL 
+Review 
+Sample Exam 3 discussed 
+Final Exam, 1:30- 3:30 p.m. 
+
+64-70 
+
+ 
+
+71-82 
+
+ 
+ 
+ 
+
+99-109 
+
+ 
+
+109-127 
+137-147 
+148-154 
+
+165-174 
+174-182 
+
+ 
+
+187-192 
+
+192-197 
+
+ 
+ 
+
+206-210 
+245-250 
+
+ 
+
+250-264 
+264-276 
+
+ 
+
+276-283 
+283-291 
+
+ 
+
+291-294 
+303-307 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+5 
+
+
